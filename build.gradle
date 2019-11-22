@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.com'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.miglayout', name: 'miglayout', version: '3.7.4'
+    compile group: 'org.springframework', name: 'spring-websocket', version: '5.2.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-messaging', version: '5.2.1.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.2.1.RELEASE'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
